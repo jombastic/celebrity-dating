@@ -8,22 +8,22 @@
   <body>
     <div class="container">
       <h1 class="text-center">Celebrity Dating Quiz</h1>
-      <h2>Find out which celebrity, fictional character or public figure is your soul mate.</h2>
+      <h2>Find out which celebrity or public figure is your soul mate.</h2>
 
       <div class="row">
         <div class="col-md-5">
           <form>
-            <div class="form-group">
-              <label for="name">What is your name?</label>
+            <div class="form-group" >
+              <label class="control-label" for="name">What is your name?</label>
               <input type="text" class="form-control" id="name" placeholder="John Doe" />
             </div>
             <div class="form-group">
-              <label for="age">How old are you?</label>
+              <label class="control-label" for="age">How old are you?</label>
               <input type="number" class="form-control" id="age" placeholder="Age" min="16" />
             </div>
             <div class="form-group">
               <label class="radio-inline">
-                <input type="radio" name="gender" value="male" /> Male
+                <input type="radio" name="gender" value="male" checked="checked" /> Male
               </label>
               <label class="radio-inline">
                 <input type="radio" name="gender" value="female" /> Female
@@ -32,13 +32,13 @@
             <div class="form-group">
               <label for="select">What interests you the most?</label>
               <select class="form-control" id="select">
-                <option value="1">
+                <option>
                   Music
                 </option>
-                <option value="2">
+                <option>
                   Movies
                 </option>
-                <option value="3">
+                <option>
                   Politics
                 </option>
               </select>
@@ -50,42 +50,43 @@
         </div>
 
         <div class="col-md-6 col-md-offset-1" id="celebrities">
-          <div class="thumbnail">
+          <h3 id="person"><span></span>, you're most compatible with:</h3>
+          <div class="thumbnail" id="tom">
             <img src="img/tom.jpg" alt="Tom Araya" class="img-rounded" />
             <div class="caption">
               <h3>Tom Araya</h3>
               <p>Tomás Enrique "Tom" Araya Díaz is a Chilean American musician, best known as the bass guitarist and lead singer of the American thrash metal band Slayer. </p>
             </div>
           </div>
-          <div class="thumbnail">
+          <div class="thumbnail" id="simone">
             <img src="img/simone.jpg" alt="Simone Simons" class="img-rounded" />
             <div class="caption">
               <h3>Simone Simons</h3>
               <p>Simone Johanna Maria Simons is a Dutch singer-songwriter. She is the lead vocalist of Dutch symphonic metal band Epica. </p>
             </div>
           </div>
-          <div class="thumbnail">
+          <div class="thumbnail" id="brad">
             <img src="img/brad.jpg" alt="Brad Pitt" class="img-rounded" />
             <div class="caption">
               <h3>Brad Pitt</h3>
               <p>William Bradley Pitt is an American actor and producer. He has received multiple awards and nominations including an Academy Award as producer under his own company Plan B Entertainment. </p>
             </div>
           </div>
-          <div class="thumbnail">
+          <div class="thumbnail" id="angelina">
             <img src="img/angelina.jpg" alt="Angelina Jolie" class="img-rounded" />
             <div class="caption">
               <h3>Angelina Jolie</h3>
               <p>Angelina Jolie Pitt is an American actress, filmmaker and humanitarian. She has received an Academy Award, two Screen Actors Guild Awards, and three Golden Globe Awards, and has been cited as Hollywood's highest-paid actress.</p>
             </div>
           </div>
-          <div class="thumbnail">
+          <div class="thumbnail" id="donald">
             <img src="img/donald.jpg" alt="Donald Trump" class="img-rounded" />
             <div class="caption">
               <h3>Donald Trump</h3>
               <p>Donald John Trump is the 45th and current President of the United States. Before entering politics, he was a businessman and television personality. </p>
             </div>
           </div>
-          <div class="thumbnail">
+          <div class="thumbnail" id="sarah">
             <img src="img/sarah.jpg" alt="Sarah Palin" class="img-rounded" />
             <div class="caption">
               <h3>Sarah Palin</h3>
